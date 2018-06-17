@@ -6,7 +6,7 @@ const ghPages       = require('gulp-gh-pages');
 
 gulp.task('serve', ['sass'], function() {
   browserSync.init({
-    files: "style.css",
+    files: "styles.css",
     // httpd-vhosts.conf users:
     open: "external",
     host: "tribute-invader.test",
@@ -28,7 +28,7 @@ gulp.task('sass', function() {
     browsers: ['last 2 versions'],
     cascade: false
   }))
-  .pipe(gulp.dest('.public/'))
+  .pipe(gulp.dest('./public'))
   .pipe(browserSync.stream());
 });
 
