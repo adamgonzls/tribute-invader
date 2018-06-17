@@ -1,0 +1,124 @@
+/****************************************
+  Inherited Syles
+*****************************************/
+/*
+See this explanation for details
+https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #444;
+  font: 10px 'Open Sans', Arial;
+  font-weight: 300; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  color: inherit;
+  font: inherit; }
+
+/****************************************
+  Resets
+*****************************************/
+body {
+  margin: 0; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+.page {
+  max-width: 100%;
+  background-color: #0f1d32;
+  padding-bottom: 20px; }
+  .page .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent; }
+
+.main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  background-color: #0f1d32;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .main-nav ul li {
+    -webkit-box-flex: 1;
+    -ms-flex: auto;
+    flex: auto;
+    display: inline-block;
+    margin: 10px;
+    text-align: center; }
+    .main-nav ul li a {
+      font-family: "Press Start 2P";
+      text-decoration: none;
+      padding: 15px;
+      text-transform: uppercase;
+      color: #5fff5f;
+      opacity: .5;
+      -webkit-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out; }
+    .main-nav ul li a:hover {
+      opacity: 1; }
+
+main .title {
+  font-family: "Lobster";
+  font-size: 10em;
+  text-shadow: 3px 3px 6px black;
+  color: #eee;
+  padding: 50px;
+  position: absolute;
+  z-index: 9999; }
+
+.pic-slider {
+  margin-bottom: 20px; }
+  .pic-slider .slick-prev:before, .pic-slider .slick-next:before {
+    color: #55ff55;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out; }
+  .pic-slider .slick-prev:before:hover, .pic-slider .slick-next:before:hover {
+    opacity: 1; }
+  .pic-slider .slick-prev {
+    left: 25px;
+    z-index: 9999; }
+  .pic-slider .slick-next {
+    right: 25px; }
+  .pic-slider div img {
+    max-width: 100%; }
+
+.media-object {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .media-object .quote {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    color: #eee;
+    background-color: #f14e53;
+    margin-right: 20px;
+    padding: 20px; }
+    .media-object .quote h2 {
+      font-family: "Lobster";
+      font-size: 2em;
+      letter-spacing: 1px;
+      line-height: 1.25; }
+  .media-object .profile {
+    background-color: pink;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    background-image: url("http://www.space-invaders.com/media//invaders/hong-kong/HK_54-diapo-6MISYSJX.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; }
+    .media-object .profile .profile-text {
+      font-family: "Press Start 2P";
+      color: #eee;
+      text-shadow: 3px 3px 3px black;
+      margin-top: 20px;
+      margin-left: 20px; }
