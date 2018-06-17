@@ -1,0 +1,118 @@
+// Colors
+$bluefly: #0f1d32;
+$pinkish: #f14e53;
+$screaming-green: #55ff55;
+$white: #eee;
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.page {
+  max-width: 100%;
+  background-color: $bluefly;
+  padding-bottom: 20px;
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+}
+
+.main-nav {
+  ul {
+    display: flex;
+    padding-left: 0;
+    background-color: $bluefly;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    li {
+      flex: auto;
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+      a {
+        font-family: "Press Start 2P";
+        text-decoration: none;
+        padding: 15px;
+        text-transform: uppercase;
+        color: #5fff5f;
+        opacity: .5;
+        transition: opacity .2s ease-in-out;
+      }
+      a:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+main {
+  .title {
+    font-family: "Lobster";
+    font-size: 10em;
+    text-shadow: 3px 3px 6px black;
+    color: $white;
+    padding: 50px;
+    position: absolute;
+    z-index: 9999;
+  }
+}
+
+.pic-slider {
+  .slick-prev:before, .slick-next:before {
+    color: $screaming-green;
+    transition: opacity .2s ease-in-out;
+  }
+  .slick-prev:before:hover, .slick-next:before:hover {
+    opacity: 1;
+  }
+  
+  .slick-prev {
+    left: 25px;
+    z-index: 9999;
+  }
+  .slick-next {
+    right: 25px;
+  }
+  margin-bottom: 20px;
+  div {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.media-object {
+  display: flex;
+  .quote {
+    flex: 1;
+    color: $white;
+    background-color: $pinkish;
+    margin-right: 20px;
+    padding: 20px;
+    h2 {
+      font-family: "Lobster";
+      font-size: 2em;
+      letter-spacing: 1px;
+      line-height: 1.25;
+    }
+  }
+  .profile {
+    background-color: pink;
+    flex: 2;
+    background-image: url("http://www.space-invaders.com/media//invaders/hong-kong/HK_54-diapo-6MISYSJX.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    .profile-text {
+      font-family: "Press Start 2P";
+      color: $white;
+      text-shadow: 3px 3px 3px black;
+      margin-top: 20px;
+      margin-left: 20px
+    }
+  }
+}
