@@ -29,6 +29,7 @@ h1, h2, h3 {
 
 .page {
   max-width: 100%;
+  height: 100vh;
   background-color: #0f1d32;
   padding-bottom: 20px; }
   .page .wrapper {
@@ -73,6 +74,11 @@ main .title {
   padding: 50px;
   position: absolute;
   z-index: 9999; }
+
+#img-div {
+  max-width: 100vw; }
+  #img-div img {
+    max-width: 100%; }
 
 .pic-slider {
   margin-bottom: 20px; }
