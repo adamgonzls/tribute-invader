@@ -34,7 +34,7 @@ gulp.task('sass', function() {
 
 gulp.task('deploy', ['sass'], function() {
   return gulp.src("./public/**/*")
-  .pipe(deploy())
+  .pipe(ghPages())
 });
 
 gulp.task('default', ['serve']);
