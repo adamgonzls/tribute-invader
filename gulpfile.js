@@ -32,4 +32,9 @@ gulp.task('sass', function() {
   .pipe(browserSync.stream());
 });
 
+gulp.task('deploy', ['sass'], function() {
+  return gulp.src("./public/**/*")
+  .pipe(deploy())
+});
+
 gulp.task('default', ['serve']);
